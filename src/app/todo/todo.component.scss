@@ -1,3 +1,78 @@
+#add-todo {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: center;
+    margin: 10%;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+input:focus {
+    background-color: #eee;
+    border: 1px solid rgb(153, 224, 241);
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(153, 224, 241);
+    opacity: .8;
+    cursor: pointer;
+    box-shadow: 1px 1px 5px black;
+}
+
+button:active {
+    box-shadow: inset 1px 1px 5px black;
+}
+
+button:hover {
+    opacity: .4;
+}
+
 .completed {
     text-decoration: line-through;
+}
+
+table {
+    width: 100%;
+}
+
+tbody tr:nth-child(2n + 1) {
+    background-color: #ddd;
+}
+
+tbody {
+    border: 2px solid #ddd;
+}
+
+th, td {
+    padding: 10px;
+}
+
+td button {
+    width: 100%;
+}
+
+tbody tr:hover {
+    opacity: .5;
+    border: 1px solid black;
+    box-shadow: 1px 1px 5px black, -1px -1px 5px black;
+}
+
+.image-container {
+    display: flex;
+    justify-content: center;
+}
+
+.valid {
+    display: none;
+}
+
+.error {
+    color: red;
 }
